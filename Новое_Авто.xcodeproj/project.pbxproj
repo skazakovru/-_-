@@ -14,7 +14,7 @@
 		859E567C22DC75E600BF18F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859E567A22DC75E600BF18F9 /* LaunchScreen.storyboard */; };
 		859E568722DC75E600BF18F9 /* __________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859E568622DC75E600BF18F9 /* __________Tests.swift */; };
 		859E569222DC75E600BF18F9 /* __________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859E569122DC75E600BF18F9 /* __________UITests.swift */; };
-		859E56A022DC766100BF18F9 /* TBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859E569F22DC766100BF18F9 /* TBVC.swift */; };
+		859E56A022DC766100BF18F9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859E569F22DC766100BF18F9 /* TableViewController.swift */; };
 		859E56A222DC8B2B00BF18F9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859E56A122DC8B2B00BF18F9 /* Item.swift */; };
 		859E56A422DC8BDC00BF18F9 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859E56A322DC8BDC00BF18F9 /* FirstTableViewController.swift */; };
 		859E56A622DC8BEF00BF18F9 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859E56A522DC8BEF00BF18F9 /* SecondTableViewController.swift */; };
@@ -59,7 +59,7 @@
 		859E568D22DC75E600BF18F9 /* Новое_АвтоUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Новое_АвтоUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		859E569122DC75E600BF18F9 /* __________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "__________UITests.swift"; sourceTree = "<group>"; };
 		859E569322DC75E600BF18F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		859E569F22DC766100BF18F9 /* TBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBVC.swift; sourceTree = "<group>"; };
+		859E569F22DC766100BF18F9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		859E56A122DC8B2B00BF18F9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		859E56A322DC8BDC00BF18F9 /* FirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		859E56A522DC8BEF00BF18F9 /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 			children = (
 				859E566E22DC75E500BF18F9 /* AppDelegate.swift */,
 				859E56A122DC8B2B00BF18F9 /* Item.swift */,
-				859E569F22DC766100BF18F9 /* TBVC.swift */,
+				859E569F22DC766100BF18F9 /* TableViewController.swift */,
 				859E56A322DC8BDC00BF18F9 /* FirstTableViewController.swift */,
 				859E56A522DC8BEF00BF18F9 /* SecondTableViewController.swift */,
 				859E56A722DC8C0200BF18F9 /* ThirdTableViewController.swift */,
@@ -297,7 +297,7 @@
 				859E56B022DC8C5200BF18F9 /* SeventhTableViewController.swift in Sources */,
 				859E56B622DC8C9600BF18F9 /* TenthTableViewController.swift in Sources */,
 				859E56A622DC8BEF00BF18F9 /* SecondTableViewController.swift in Sources */,
-				859E56A022DC766100BF18F9 /* TBVC.swift in Sources */,
+				859E56A022DC766100BF18F9 /* TableViewController.swift in Sources */,
 				859E567722DC75E500BF18F9 /* __________.xcdatamodeld in Sources */,
 				859E56B222DC8C6600BF18F9 /* EighthTableViewController.swift in Sources */,
 				859E566F22DC75E500BF18F9 /* AppDelegate.swift in Sources */,
@@ -490,7 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rigpet.----------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -508,7 +508,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rigpet.----------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
