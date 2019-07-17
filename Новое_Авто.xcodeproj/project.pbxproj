@@ -122,21 +122,10 @@
 			isa = PBXGroup;
 			children = (
 				859E566E22DC75E500BF18F9 /* AppDelegate.swift */,
-				859E56A122DC8B2B00BF18F9 /* Item.swift */,
-				859E569F22DC766100BF18F9 /* TableViewController.swift */,
-				859E56A322DC8BDC00BF18F9 /* FirstTableViewController.swift */,
-				859E56A522DC8BEF00BF18F9 /* SecondTableViewController.swift */,
-				859E56A722DC8C0200BF18F9 /* ThirdTableViewController.swift */,
-				859E56A922DC8C1400BF18F9 /* FourthTableViewController.swift */,
-				859E56AB22DC8C2700BF18F9 /* FifthTableViewController.swift */,
-				859E56AD22DC8C3A00BF18F9 /* SixthTableViewController.swift */,
-				859E56AF22DC8C5200BF18F9 /* SeventhTableViewController.swift */,
-				859E56B122DC8C6600BF18F9 /* EighthTableViewController.swift */,
-				859E56B322DC8C7800BF18F9 /* NinethTableViewController.swift */,
-				859E56B522DC8C9600BF18F9 /* TenthTableViewController.swift */,
-				859E567222DC75E500BF18F9 /* Main.storyboard */,
-				859E567822DC75E600BF18F9 /* Assets.xcassets */,
-				859E567A22DC75E600BF18F9 /* LaunchScreen.storyboard */,
+				85ED915522DF21BE003B4A52 /* Data Model */,
+				85ED915622DF21EB003B4A52 /* Controllers */,
+				85ED915722DF2225003B4A52 /* Views */,
+				85ED915822DF2249003B4A52 /* Supporting Files */,
 				859E567D22DC75E600BF18F9 /* Info.plist */,
 				859E567522DC75E500BF18F9 /* __________.xcdatamodeld */,
 			);
@@ -159,6 +148,49 @@
 				859E569322DC75E600BF18F9 /* Info.plist */,
 			);
 			path = "Новое_АвтоUITests";
+			sourceTree = "<group>";
+		};
+		85ED915522DF21BE003B4A52 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				859E56A122DC8B2B00BF18F9 /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		85ED915622DF21EB003B4A52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				859E569F22DC766100BF18F9 /* TableViewController.swift */,
+				859E56A322DC8BDC00BF18F9 /* FirstTableViewController.swift */,
+				859E56A522DC8BEF00BF18F9 /* SecondTableViewController.swift */,
+				859E56A722DC8C0200BF18F9 /* ThirdTableViewController.swift */,
+				859E56A922DC8C1400BF18F9 /* FourthTableViewController.swift */,
+				859E56AB22DC8C2700BF18F9 /* FifthTableViewController.swift */,
+				859E56AD22DC8C3A00BF18F9 /* SixthTableViewController.swift */,
+				859E56AF22DC8C5200BF18F9 /* SeventhTableViewController.swift */,
+				859E56B122DC8C6600BF18F9 /* EighthTableViewController.swift */,
+				859E56B322DC8C7800BF18F9 /* NinethTableViewController.swift */,
+				859E56B522DC8C9600BF18F9 /* TenthTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		85ED915722DF2225003B4A52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				859E567222DC75E500BF18F9 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		85ED915822DF2249003B4A52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				859E567822DC75E600BF18F9 /* Assets.xcassets */,
+				859E567A22DC75E600BF18F9 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
