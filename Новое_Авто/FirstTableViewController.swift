@@ -5,7 +5,7 @@
 //  Created by Sergei Kazakov on 7/15/19.
 //  Copyright © 2019 Sergei Kazakov. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
 class FirstTableViewController: UITableViewController {
@@ -14,6 +14,8 @@ class FirstTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         let newItem = Item()
         newItem.title = "Руководство по эксплуатации (инструкция)"

@@ -32,13 +32,15 @@
                             <outlet property="delegate" destination="vCW-7H-Zxf" id="s6q-bF-EYV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="План проверки нового авто:" id="PRl-QM-ECU"/>
+                    <navigationItem key="navigationItem" title="План проверки нового авто:" id="PRl-QM-ECU">
+                        <barButtonItem key="backBarButtonItem" title="План" id="7Xp-cK-da6"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcc-O6-7cq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1784.057971014493" y="32.8125"/>
         </scene>
-        <!--Sixth Table View Controller-->
+        <!--Внешний осмотр-->
         <scene sceneID="ii5-FS-Peb">
             <objects>
                 <tableViewController storyboardIdentifier="F" id="gU0-Ch-O7F" customClass="SixthTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,12 +63,23 @@
                             <outlet property="delegate" destination="gU0-Ch-O7F" id="If7-jK-lzx"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="add" id="h1o-gx-sAt">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Внешний осмотр" id="7jV-O7-UN5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XYz-Dy-S0A">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOo-HI-qP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="-802"/>
+            <point key="canvasLocation" x="1403" y="-930"/>
         </scene>
-        <!--Seventh Table View Controller-->
+        <!--Кузов и его элементы-->
         <scene sceneID="X5E-5F-Dg3">
             <objects>
                 <tableViewController storyboardIdentifier="G" id="gng-Od-3q3" customClass="SeventhTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,6 +95,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.32549019610000002" blue="0.4549019608" alpha="0.5" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -89,12 +103,19 @@
                             <outlet property="delegate" destination="gng-Od-3q3" id="Ucu-qT-N3m"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="add" id="REs-XO-7aF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Кузов и его элементы" id="lK4-Wx-vzh"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="die-4c-ivk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1262" y="-938"/>
+            <point key="canvasLocation" x="2501" y="-981"/>
         </scene>
-        <!--First Table View Controller-->
+        <!--Документы-->
         <scene sceneID="YU2-WN-PQg">
             <objects>
                 <tableViewController storyboardIdentifier="A" id="M40-sW-9Yv" customClass="FirstTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,12 +138,19 @@
                             <outlet property="delegate" destination="M40-sW-9Yv" id="j1w-4E-Yzp"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Документы" id="W8C-OV-EKC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ffy-MY-ORL">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXm-6q-Hrl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2739.130434782609" y="-146.65178571428569"/>
         </scene>
-        <!--Second Table View Controller-->
+        <!--Маркировка-->
         <scene sceneID="9Qu-4e-s7f">
             <objects>
                 <tableViewController storyboardIdentifier="B" id="yu1-sc-GES" customClass="SecondTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -145,12 +173,22 @@
                             <outlet property="delegate" destination="yu1-sc-GES" id="TBo-pV-ObS"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Маркировка" id="EbE-qB-TxF">
+                        <barButtonItem key="backBarButtonItem" systemItem="add" id="LJ5-X4-bNq">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CjL-Lb-iA3">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v31-h5-Llp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3657.971014492754" y="-268.52678571428572"/>
         </scene>
-        <!--Fifth Table View Controller-->
+        <!--Title-->
         <scene sceneID="JGN-qV-5ua">
             <objects>
                 <tableViewController storyboardIdentifier="E" id="c2B-NM-yLJ" customClass="FifthTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -173,12 +211,18 @@
                             <outlet property="delegate" destination="c2B-NM-yLJ" id="F8U-lG-66b"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="nIm-yA-HyW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fV9-5o-oDz">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzv-0V-hf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4607.2463768115949" y="-3.3482142857142856"/>
         </scene>
-        <!--Third Table View Controller-->
+        <!--Комплектация-->
         <scene sceneID="ZMA-iv-qhb">
             <objects>
                 <tableViewController storyboardIdentifier="C" id="VEr-sR-Lqt" customClass="ThirdTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -201,12 +245,23 @@
                             <outlet property="delegate" destination="VEr-sR-Lqt" id="Vnn-xZ-M7o"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="add" id="Xu7-T6-Agi">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Комплектация" id="kHh-Ty-u1t">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Cpm-l7-cph">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hnb-Lz-lQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2810.144927536232" y="545.75892857142856"/>
         </scene>
-        <!--Fourth Table View Controller-->
+        <!--Доп. Оборудование-->
         <scene sceneID="6pv-jg-6b7">
             <objects>
                 <tableViewController storyboardIdentifier="D" id="BwL-wh-eSa" customClass="FourthTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -229,12 +284,19 @@
                             <outlet property="delegate" destination="BwL-wh-eSa" id="kaL-iF-Nus"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Доп. Оборудование" id="TLb-7O-0i9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vmM-7c-gQE">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K77-vz-nKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3736.2318840579715" y="525.66964285714289"/>
         </scene>
-        <!--Tenth Table View Controller-->
+        <!--Title-->
         <scene sceneID="EVp-1A-A0D">
             <objects>
                 <tableViewController storyboardIdentifier="J" id="opP-fv-7de" customClass="TenthTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -257,12 +319,20 @@
                             <outlet property="delegate" destination="opP-fv-7de" id="7OY-AN-RS8"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="Zgv-Kt-OaR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="u3x-qc-MU2">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3a-I2-1Yw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="1071"/>
+            <point key="canvasLocation" x="1283" y="1173"/>
         </scene>
-        <!--Nineth Table View Controller-->
+        <!--Осмотр салона-->
         <scene sceneID="FS6-Tz-gHh">
             <objects>
                 <tableViewController storyboardIdentifier="I" id="EkL-2R-mr9" customClass="NinethTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -285,12 +355,20 @@
                             <outlet property="delegate" destination="EkL-2R-mr9" id="gKr-n3-c2e"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Осмотр салона" id="nId-kZ-Xut">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LHJ-ht-qp6">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hpb-2G-lmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="1208"/>
+            <point key="canvasLocation" x="2164" y="1238"/>
         </scene>
-        <!--Eighth Table View Controller-->
+        <!--Title-->
         <scene sceneID="8eO-pR-2ZH">
             <objects>
                 <tableViewController storyboardIdentifier="H" id="FZr-SV-Y77" customClass="EighthTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -313,10 +391,18 @@
                             <outlet property="delegate" destination="FZr-SV-Y77" id="JA6-ZB-wb3"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="DOh-NO-y8Y">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="V8Q-E5-b0f">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="un5-Ct-fJ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2731" y="921"/>
+            <point key="canvasLocation" x="3294" y="1282"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lZN-cZ-Yeu">
@@ -341,4 +427,5 @@
             <point key="canvasLocation" x="873.91304347826099" y="32.8125"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
