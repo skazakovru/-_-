@@ -12,7 +12,7 @@ class FirstTableViewController: UITableViewController {
     
     var itemArray = [Item]()
     
-            let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist1")
+        let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist1")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,17 +23,22 @@ class FirstTableViewController: UITableViewController {
         itemArray.append(newItem)
         
         let newItem2 = Item()
-        newItem2.title = "Руководство по эксплуатации (инструкция)"
+        newItem2.title = "Сервисная книжка с отметками о продаже и печатями"
         itemArray.append(newItem2)
         
         let newItem3 = Item()
-        newItem3.title = "Руководство по эксплуатации (инструкция)"
+        newItem3.title = "ПТС (Паспорт Транспортного Средства) с печатями, - убедиться в отсутствии предыдущих владельцев"
         itemArray.append(newItem3)
         
         let newItem4 = Item()
-        newItem4.title = "Руководство по эксплуатации (инструкция)"
+        newItem4.title = "Договор Купли-Продажи (не менее 2-х экземпляров) с подписями продавца и покупателя и с печатями автосалона"
         itemArray.append(newItem4)
         
+        let newItem5 = Item()
+        newItem5.title = "Акт Приемки-Передачи. Данный акт подписывается только после осмотра и проверки автомобиля!"
+        itemArray.append(newItem5)
+        
+       
         loadItems()
     }
 
@@ -49,6 +54,9 @@ class FirstTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "A", for: indexPath)
 
         let item = itemArray[indexPath.row]
+        cell.textLabel?.font = UIFont (name: "Avenir Next", size: 15)
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.textColor = #colorLiteral(red: 0.03801516443, green: 0.3190023005, blue: 0.4801079631, alpha: 1)
         
         cell.textLabel?.text = item.title
         
@@ -65,15 +73,36 @@ class FirstTableViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "Удалить"
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            itemArray.remove(at: indexPath.row)
 
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.endUpdates()
+            
+            saveItems()
+            
+        }
+    }
     
     @IBAction func buttonPressed(_ sender: UIBarButtonItem) {
         
         var textField = UITextField()
         
-        let alert = UIAlertController(title: "Добавить новый пункт", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Добавить пункт", style: .default) { (action) in
+        let action = UIAlertAction(title: "Добавить к списку", style: .default) { (action) in
             
             let newItem = Item()
             newItem.title = textField.text!

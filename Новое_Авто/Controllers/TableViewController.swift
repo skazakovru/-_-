@@ -16,7 +16,7 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         
-        itemArray = ["Документы","Маркировка","Комплектация","Дополнительное оборудование","Колеса","Внешний осмотр","Кузов и его элементы","Уровень технических жидкостей","Осмотр салона","Проверка работоспособности основных узлов и агрегатов автомобиля"]
+        itemArray = ["Документы","Маркировка","Комплектация","Дополнительное оборудование","Колеса","Внешний осмотр","Кузов и его элементы","Уровень технических жидкостей","Осмотр салона","Проверка основных узлов и агрегатов"]
         identities = ["A","B","C","D","E","F","G","H","I","J"]
     }
     
@@ -27,6 +27,9 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
         cell?.textLabel?.text = itemArray[indexPath.row]
+        cell?.textLabel?.numberOfLines = 0
+        cell?.textLabel?.font = UIFont (name: "Avenir Next", size: 19)
+        cell?.textLabel?.textColor = #colorLiteral(red: 0.9592440724, green: 0.965782702, blue: 0.9719859958, alpha: 1)
         return cell!
     }
     
@@ -34,6 +37,9 @@ class TableViewController: UITableViewController {
         
         let vcName = identities[indexPath.row]
         let viewController = storyboard?.instantiateViewController(withIdentifier: vcName)
+       
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         self.navigationController?.pushViewController(viewController!, animated: true)
         
     }
