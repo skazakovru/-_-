@@ -41,7 +41,7 @@ class TableViewController: UITableViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         self.navigationController?.pushViewController(viewController!, animated: true)
-        
+
     }
     
 }
