@@ -18,21 +18,29 @@ class SeventhTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let newItem = Item()
-        newItem.title = "Руководство по эксплуатации (инструкция)"
+        newItem.title = "Измерить толщиномером каждую деталь кузова в 2-х местах - разница не должна превышать 100 микрон, а толщина краски должна быть не более 170 микрон"
         itemArray.append(newItem)
         
         let newItem2 = Item()
-        newItem2.title = "Руководство по эксплуатации (инструкция)"
+        newItem2.title = "Открыть двери, капот и багажник и убедиться, убедиться, что все петли и болты не имеют следов демонтажа"
         itemArray.append(newItem2)
         
         let newItem3 = Item()
-        newItem3.title = "Руководство по эксплуатации (инструкция)"
+        newItem3.title = "Багажник: убедиться в отсутствии повреждений металла в месте крепления запасного колеса/докатки"
         itemArray.append(newItem3)
         
         let newItem4 = Item()
-        newItem4.title = "Руководство по эксплуатации (инструкция)"
+        newItem4.title = "Под капотом: убедиться в отсутствии повреждений передней панели радиатора и ребер жесткости слева и справа от двигателя"
         itemArray.append(newItem4)
         
+        let newItem5 = Item()
+        newItem5.title = "Стекла: убедиться, что год выпуска всех стекол совпадает и отсутствуют повреждения стекл"
+        itemArray.append(newItem5)
+        
+        let newItem6 = Item()
+        newItem6.title = "О всех найденных дефектах сделать отметку в акте Приемки-Передачи"
+        itemArray.append(newItem6)
+    
         loadItems()
     }
     

@@ -18,21 +18,46 @@ class NinethTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let newItem = Item()
-        newItem.title = "Руководство по эксплуатации (инструкция)"
+        newItem.title = "Убедитесь в отсутствии повреждений/царапин и пятен на сидениях, консоли и панели приборов"
         itemArray.append(newItem)
         
         let newItem2 = Item()
-        newItem2.title = "Руководство по эксплуатации (инструкция)"
+        newItem2.title = "Осмотрите потолок и боковые стойки салона на отсутствие пятен и дефектов"
         itemArray.append(newItem2)
         
         let newItem3 = Item()
-        newItem3.title = "Руководство по эксплуатации (инструкция)"
+        newItem3.title = "Убедитесь, что все панели обшивки установлены на место и плотно прилегают (особенно, если устанавливалась сигнализация, или какая-либо дополнительная скрытая под панели проводка)"
         itemArray.append(newItem3)
         
         let newItem4 = Item()
-        newItem4.title = "Руководство по эксплуатации (инструкция)"
+        newItem4.title = "Убедиться, что весь цалофан и транспортная пленка сняты"
         itemArray.append(newItem4)
         
+        let newItem5 = Item()
+        newItem5.title = "О всех найденных дефектах сделать отметку в акте Приемки-Передачи"
+        itemArray.append(newItem5)
+        
+        let newItem6 = Item()
+        newItem6.title = "// Напоминание о возможностях приложения:"
+        itemArray.append(newItem6)
+        
+        let newItem7 = Item()
+        newItem7.title = "* Завершенные пункты отмечаются галочками касанием соответствующей строки и снимаются повторным касанием."
+        itemArray.append(newItem7)
+        
+        let newItem8 = Item()
+        newItem8.title = "* Если нажать на '+' в верхней части экрана, то можно добавить дополнительный пункт."
+        itemArray.append(newItem8)
+        
+        let newItem9 = Item()
+        newItem9.title = "* Любой пункт можно безвозвратно удалить движением пальца по страке справа налево."
+        itemArray.append(newItem9)
+        
+        let newItem10 = Item()
+        newItem10.title = "* Все изменения сохраняются автоматически и остаются в памяти устройства даже после перезагрузки."
+        itemArray.append(newItem10)
+        
+        saveItems()
         loadItems()
     }
     

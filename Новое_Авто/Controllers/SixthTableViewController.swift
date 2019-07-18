@@ -19,20 +19,41 @@ class SixthTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let newItem = Item()
-        newItem.title = "Руководство по эксплуатации (инструкция)"
+        newItem.title = "Убедиться, что диски одного рисунка, размера, цвета и не имеют видимых повреждений"
         itemArray.append(newItem)
         
         let newItem2 = Item()
-        newItem2.title = "Руководство по эксплуатации (инструкция)"
+        newItem2.title = "Убедиться, что протектор шины имеет одинаковый рисунок и отсутсвуют видимые повреждения"
         itemArray.append(newItem2)
         
         let newItem3 = Item()
-        newItem3.title = "Руководство по эксплуатации (инструкция)"
+        newItem3.title = "Убедиться, что название и размер на боковой части резины каждого колеса совпадают на всех колесах"
         itemArray.append(newItem3)
         
         let newItem4 = Item()
-        newItem4.title = "Руководство по эксплуатации (инструкция)"
+        newItem4.title = "Проверить давление в шинах и Убедиться, что давление в шинах соответсвует рекоммендациям производителя"
         itemArray.append(newItem4)
+        
+        
+        let newItem6 = Item()
+        newItem6.title = "// Напоминание о возможностях приложения:"
+        itemArray.append(newItem6)
+        
+        let newItem7 = Item()
+        newItem7.title = "* Завершенные пункты отмечаются галочками касанием соответствующей строки и снимаются повторным касанием."
+        itemArray.append(newItem7)
+        
+        let newItem8 = Item()
+        newItem8.title = "* Если нажать на '+' в верхней части экрана, то можно добавить дополнительный пункт."
+        itemArray.append(newItem8)
+        
+        let newItem9 = Item()
+        newItem9.title = "* Любой пункт можно безвозвратно удалить движением пальца по страке справа налево."
+        itemArray.append(newItem9)
+        
+        let newItem10 = Item()
+        newItem10.title = "* Все изменения сохраняются автоматически и остаются в памяти устройства даже после перезагрузки."
+        itemArray.append(newItem10)
         
         loadItems()
     }

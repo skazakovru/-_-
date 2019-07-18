@@ -18,20 +18,32 @@ class ThirdTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let newItem = Item()
-        newItem.title = "Руководство по эксплуатации (инструкция)"
+        newItem.title = "Два комплекта ключей зажигания автомобиля"
         itemArray.append(newItem)
         
         let newItem2 = Item()
-        newItem2.title = "Руководство по эксплуатации (инструкция)"
+        newItem2.title = "Запасное колесо, или докатка"
         itemArray.append(newItem2)
         
         let newItem3 = Item()
-        newItem3.title = "Руководство по эксплуатации (инструкция)"
+        newItem3.title = "Балонный ключ"
         itemArray.append(newItem3)
         
         let newItem4 = Item()
-        newItem4.title = "Руководство по эксплуатации (инструкция)"
+        newItem4.title = "Домкрат"
         itemArray.append(newItem4)
+        
+        let newItem5 = Item()
+        newItem5.title = "Ключ-секретка, если колеса с секретками"
+        itemArray.append(newItem5)
+        
+        let newItem6 = Item()
+        newItem6.title = "Знак аварийной остановки"
+        itemArray.append(newItem6)
+        
+        let newItem7 = Item()
+        newItem7.title = "Компрессор (прилагается не во всех марках автомобилей)"
+        itemArray.append(newItem7)
         
         loadItems()
     }

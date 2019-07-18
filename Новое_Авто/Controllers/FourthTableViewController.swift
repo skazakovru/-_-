@@ -18,20 +18,48 @@ class FourthTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let newItem = Item()
-        newItem.title = "Руководство по эксплуатации (инструкция)"
+        newItem.title = "Сигнализация"
         itemArray.append(newItem)
         
         let newItem2 = Item()
-        newItem2.title = "Руководство по эксплуатации (инструкция)"
+        newItem2.title = "Магнитола"
         itemArray.append(newItem2)
         
         let newItem3 = Item()
-        newItem3.title = "Руководство по эксплуатации (инструкция)"
+        newItem3.title = "Телевизор"
         itemArray.append(newItem3)
         
         let newItem4 = Item()
-        newItem4.title = "Руководство по эксплуатации (инструкция)"
+        newItem4.title = "Коврики"
         itemArray.append(newItem4)
+        
+        let newItem5 = Item()
+        newItem5.title = "Подкрылки"
+        itemArray.append(newItem5)
+        
+        let newItem6 = Item()
+        newItem6.title = "Защита решетки радиатора"
+        itemArray.append(newItem6)
+        
+        let newItem7 = Item()
+        newItem7.title = "Защита картера двигателя"
+        itemArray.append(newItem7)
+        
+        let newItem8 = Item()
+        newItem8.title = "Тонировка"
+        itemArray.append(newItem8)
+        
+        let newItem9 = Item()
+        newItem9.title = "Защитная пленка"
+        itemArray.append(newItem9)
+        
+        let newItem10 = Item()
+        newItem10.title = "Документация на сигнализацию, вместе с коробкой"
+        itemArray.append(newItem10)
+        
+        let newItem11 = Item()
+        newItem11.title = "Документация на магнитолу (телевизор), вместе с коробками"
+        itemArray.append(newItem11)
         
         loadItems()
     }

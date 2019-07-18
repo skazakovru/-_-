@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="1784.057971014493" y="32.8125"/>
         </scene>
-        <!--Внешний осмотр-->
+        <!--Колеса-->
         <scene sceneID="ii5-FS-Peb">
             <objects>
                 <tableViewController storyboardIdentifier="F" id="gU0-Ch-O7F" customClass="SixthTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +70,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Внешний осмотр" id="7jV-O7-UN5">
+                    <navigationItem key="navigationItem" title="Колеса" id="7jV-O7-UN5">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XYz-Dy-S0A">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -207,7 +207,7 @@
             </objects>
             <point key="canvasLocation" x="3657.971014492754" y="-268.52678571428572"/>
         </scene>
-        <!--Колеса-->
+        <!--Внешний осмотр-->
         <scene sceneID="JGN-qV-5ua">
             <objects>
                 <tableViewController storyboardIdentifier="E" id="c2B-NM-yLJ" customClass="FifthTableViewController" customModule="Новое_Авто" customModuleProvider="target" sceneMemberID="viewController">
@@ -232,7 +232,7 @@
                             <outlet property="delegate" destination="c2B-NM-yLJ" id="F8U-lG-66b"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Колеса" id="nIm-yA-HyW">
+                    <navigationItem key="navigationItem" title="Внешний осмотр" id="nIm-yA-HyW">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fV9-5o-oDz">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>

@@ -38,7 +38,27 @@ class FirstTableViewController: UITableViewController {
         newItem5.title = "Акт Приемки-Передачи. Данный акт подписывается только после осмотра и проверки автомобиля!"
         itemArray.append(newItem5)
         
-       
+        
+        let newItem6 = Item()
+        newItem6.title = "// Примечания по возможностям приложения:"
+        itemArray.append(newItem6)
+        
+        let newItem7 = Item()
+        newItem7.title = "* Завершенные пункты отмечаются галочками касанием соответствующей строки и снимаются повторным касанием."
+        itemArray.append(newItem7)
+        
+        let newItem8 = Item()
+        newItem8.title = "* Если нажать на '+' в верхней части экрана, то можно добавить дополнительный пункт."
+        itemArray.append(newItem8)
+        
+        let newItem9 = Item()
+        newItem9.title = "* Любой пункт можно безвозвратно удалить движением пальца по страке справа налево."
+        itemArray.append(newItem9)
+        
+        let newItem10 = Item()
+        newItem10.title = "* Все изменения сохраняются автоматически и остаются в памяти устройства даже после перезагрузки."
+        itemArray.append(newItem10)
+        
         loadItems()
     }
 

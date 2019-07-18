@@ -18,21 +18,43 @@ class SecondTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let newItem = Item()
-        newItem.title = "Руководство по эксплуатации (инструкция)"
+        newItem.title = "Выяснить все места нанесения маркировки в автомобиле"
         itemArray.append(newItem)
         
         let newItem2 = Item()
-        newItem2.title = "Руководство по эксплуатации (инструкция)"
+        newItem2.title = "Убедиться, что маркировка чистая и легко читается"
         itemArray.append(newItem2)
         
         let newItem3 = Item()
-        newItem3.title = "Руководство по эксплуатации (инструкция)"
+        newItem3.title = "Сверить номера VIN кода двигателя и номер кузова с номерами в ПТС и договоре Купли-Продажи"
         itemArray.append(newItem3)
         
         let newItem4 = Item()
-        newItem4.title = "Руководство по эксплуатации (инструкция)"
+        newItem4.title = "Примечание: представитель ГИБДД может и не знать, где находится маркировка, что может привести к задержке процесса установки автомобиля на учет."
         itemArray.append(newItem4)
         
+        
+        let newItem6 = Item()
+        newItem6.title = "// Напоминание о возможностях приложения:"
+        itemArray.append(newItem6)
+        
+        let newItem7 = Item()
+        newItem7.title = "* Завершенные пункты отмечаются галочками касанием соответствующей строки и снимаются повторным касанием."
+        itemArray.append(newItem7)
+        
+        let newItem8 = Item()
+        newItem8.title = "* Если нажать на '+' в верхней части экрана, то можно добавить дополнительный пункт."
+        itemArray.append(newItem8)
+        
+        let newItem9 = Item()
+        newItem9.title = "* Любой пункт можно безвозвратно удалить движением пальца по страке справа налево."
+        itemArray.append(newItem9)
+        
+        let newItem10 = Item()
+        newItem10.title = "* Все изменения сохраняются автоматически и остаются в памяти устройства даже после перезагрузки."
+        itemArray.append(newItem10)
+        
+
         loadItems()
     }
     

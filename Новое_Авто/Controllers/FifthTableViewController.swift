@@ -19,20 +19,32 @@ class FifthTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let newItem = Item()
-        newItem.title = "Руководство по эксплуатации (инструкция)"
+        newItem.title = "Убедиться, что автомобиль вымыт, без подтеков антикора/смазки, разводов и остатков целофана"
         itemArray.append(newItem)
         
         let newItem2 = Item()
-        newItem2.title = "Руководство по эксплуатации (инструкция)"
+        newItem2.title = "Осмотреть автомобиль с разных углов на предмет отсутствия разных оттенков краски и бликов"
         itemArray.append(newItem2)
         
         let newItem3 = Item()
-        newItem3.title = "Руководство по эксплуатации (инструкция)"
+        newItem3.title = "Визуально убедиться в отсутствии царапин, сколов и подтеков краски на кузове"
         itemArray.append(newItem3)
         
         let newItem4 = Item()
-        newItem4.title = "Руководство по эксплуатации (инструкция)"
+        newItem4.title = "Визуально убедиться в одинаковости зазоров между деталями кузова"
         itemArray.append(newItem4)
+        
+        let newItem5 = Item()
+        newItem5.title = "Убедитесь в отсутствии царапин и потертостей на порогах"
+        itemArray.append(newItem5)
+        
+        let newItem6 = Item()
+        newItem6.title = "Убедитесь в отсутствии остатков полировки (обычно, светлого цвета) на стыках кузова и прилегающего пластика"
+        itemArray.append(newItem6)
+        
+        let newItem7 = Item()
+        newItem7.title = "О всех найденных дефектах сделайте отметку в акте Приемки-Передачи автомобиля"
+        itemArray.append(newItem7)
         
         loadItems()
     }

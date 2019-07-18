@@ -18,20 +18,36 @@ class EighthTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let newItem = Item()
-        newItem.title = "Руководство по эксплуатации (инструкция)"
+        newItem.title = "Проверить уровень масла"
         itemArray.append(newItem)
         
         let newItem2 = Item()
-        newItem2.title = "Руководство по эксплуатации (инструкция)"
+        newItem2.title = "Проверить уровень антифриза"
         itemArray.append(newItem2)
         
         let newItem3 = Item()
-        newItem3.title = "Руководство по эксплуатации (инструкция)"
+        newItem3.title = "Проверить уровень тормозной жидкости"
         itemArray.append(newItem3)
         
         let newItem4 = Item()
-        newItem4.title = "Руководство по эксплуатации (инструкция)"
+        newItem4.title = "Проверить уровень масла в коробке передач"
         itemArray.append(newItem4)
+        
+        let newItem5 = Item()
+        newItem5.title = "Требуйте долива, если уровень меньше нормы"
+        itemArray.append(newItem5)
+        
+        let newItem6 = Item()
+        newItem6.title = "Требуйте откачать излишки, если уровень масла в двигателе выше нормы"
+        itemArray.append(newItem6)
+        
+        let newItem7 = Item()
+        newItem7.title = "При помощи фонарика осмотреть двигатель на отстутствие подтеков масла и запотеваний"
+        itemArray.append(newItem7)
+        
+        let newItem8 = Item()
+        newItem8.title = "Снять верхнюю крышку-кожух двигателя и убедиться в отстутствии подтеков масла и наличии посторонних предметов"
+        itemArray.append(newItem8)
         
         loadItems()
         
