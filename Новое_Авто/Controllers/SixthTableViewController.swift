@@ -31,7 +31,7 @@ class SixthTableViewController: UITableViewController {
         itemArray.append(newItem3)
         
         let newItem4 = Item()
-        newItem4.title = "Проверить давление в шинах и Убедиться, что давление в шинах соответсвует рекоммендациям производителя"
+        newItem4.title = "Проверить давление в шинах и убедиться, что давление в шинах соответсвует рекоммендациям производителя"
         itemArray.append(newItem4)
         
         
@@ -55,6 +55,7 @@ class SixthTableViewController: UITableViewController {
         newItem10.title = "* Все изменения сохраняются автоматически и остаются в памяти устройства даже после перезагрузки."
         itemArray.append(newItem10)
         
+          
         loadItems()
     }
     
@@ -71,7 +72,7 @@ class SixthTableViewController: UITableViewController {
         
         let item = itemArray[indexPath.row]
         
-        cell.textLabel?.font = UIFont (name: "Avenir Next", size: 15)
+        cell.textLabel?.font = UIFont (name: "Helvetica Neue", size: 15)
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.textColor = #colorLiteral(red: 0.03801516443, green: 0.3190023005, blue: 0.4801079631, alpha: 1)
         
@@ -86,6 +87,7 @@ class SixthTableViewController: UITableViewController {
  
         itemArray[indexPath.row].done = !itemArray[indexPath.row].done
         
+       
         saveItems()
         
         tableView.deselectRow(at: indexPath, animated: true)

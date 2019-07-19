@@ -28,7 +28,7 @@ class TableViewController: UITableViewController {
         
         cell?.textLabel?.text = itemArray[indexPath.row]
         cell?.textLabel?.numberOfLines = 0
-        cell?.textLabel?.font = UIFont (name: "Avenir Next", size: 19)
+        cell?.textLabel?.font = UIFont (name: "Helvetica Neue", size: 19)
         cell?.textLabel?.textColor = #colorLiteral(red: 0.9592440724, green: 0.965782702, blue: 0.9719859958, alpha: 1)
         return cell!
     }

@@ -45,7 +45,7 @@ class FifthTableViewController: UITableViewController {
         let newItem7 = Item()
         newItem7.title = "О всех найденных дефектах сделайте отметку в акте Приемки-Передачи автомобиля"
         itemArray.append(newItem7)
-        
+          
         loadItems()
     }
     
@@ -62,7 +62,7 @@ class FifthTableViewController: UITableViewController {
         
         let item = itemArray[indexPath.row]
         
-        cell.textLabel?.font = UIFont (name: "Avenir Next", size: 15)
+        cell.textLabel?.font = UIFont (name: "Helvetica Neue", size: 15)
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.textColor = #colorLiteral(red: 0.03801516443, green: 0.3190023005, blue: 0.4801079631, alpha: 1)
         

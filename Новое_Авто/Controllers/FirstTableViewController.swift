@@ -38,7 +38,6 @@ class FirstTableViewController: UITableViewController {
         newItem5.title = "Акт Приемки-Передачи. Данный акт подписывается только после осмотра и проверки автомобиля!"
         itemArray.append(newItem5)
         
-        
         let newItem6 = Item()
         newItem6.title = "// Примечания по возможностям приложения:"
         itemArray.append(newItem6)
@@ -74,7 +73,7 @@ class FirstTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "A", for: indexPath)
 
         let item = itemArray[indexPath.row]
-        cell.textLabel?.font = UIFont (name: "Avenir Next", size: 15)
+        cell.textLabel?.font = UIFont (name: "Helvetica Neue", size: 15)
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.textColor = #colorLiteral(red: 0.03801516443, green: 0.3190023005, blue: 0.4801079631, alpha: 1)
         

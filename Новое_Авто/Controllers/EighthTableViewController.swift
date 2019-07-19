@@ -49,6 +49,7 @@ class EighthTableViewController: UITableViewController {
         newItem8.title = "Снять верхнюю крышку-кожух двигателя и убедиться в отстутствии подтеков масла и наличии посторонних предметов"
         itemArray.append(newItem8)
         
+         
         loadItems()
         
     }
@@ -66,7 +67,7 @@ class EighthTableViewController: UITableViewController {
         
         let item = itemArray[indexPath.row]
         
-        cell.textLabel?.font = UIFont (name: "Avenir Next", size: 15)
+        cell.textLabel?.font = UIFont (name: "Helvetica Neue", size: 15)
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.textColor = #colorLiteral(red: 0.03801516443, green: 0.3190023005, blue: 0.4801079631, alpha: 1)
         

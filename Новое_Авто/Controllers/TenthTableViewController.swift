@@ -57,7 +57,7 @@ class TenthTableViewController: UITableViewController {
         newItem10.title = "Примечание: Если при проверки обнаружены дефекты/неисправности, то вы вправе требовать их устранения, или отказаться от покупки и вернуть уплаченную сумму."
         itemArray.append(newItem10)
         
-        saveItems()
+       
         loadItems()
     }
     
@@ -74,7 +74,7 @@ class TenthTableViewController: UITableViewController {
         
         let item = itemArray[indexPath.row]
         
-        cell.textLabel?.font = UIFont (name: "Avenir Next", size: 15)
+        cell.textLabel?.font = UIFont (name: "Helvetica Neue", size: 15)
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.textColor = #colorLiteral(red: 0.03801516443, green: 0.3190023005, blue: 0.4801079631, alpha: 1)
         

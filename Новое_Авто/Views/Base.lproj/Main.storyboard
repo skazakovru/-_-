@@ -361,7 +361,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3a-I2-1Yw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -402,7 +401,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hpb-2G-lmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -457,12 +455,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="6g8-Cc-TmN">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.11764705882352941" green="0.8901960784313725" blue="0.81176470588235294" alpha="0.80019263698630139" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.11764705882352941" green="0.8901960784313725" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.94901960784313721" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="23"/>
                             <color key="textColor" red="0.050980392156862744" green="0.24705882352941178" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
