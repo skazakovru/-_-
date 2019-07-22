@@ -38,7 +38,7 @@ class NinethTableViewController: UITableViewController {
         itemArray.append(newItem5)
         
         let newItem6 = Item()
-        newItem6.title = "// Напоминание о возможностях приложения:"
+        newItem6.title = ""
         itemArray.append(newItem6)
         
         let newItem7 = Item()
@@ -57,7 +57,6 @@ class NinethTableViewController: UITableViewController {
         newItem10.title = "* Все изменения сохраняются автоматически и остаются в памяти устройства даже после перезагрузки."
         itemArray.append(newItem10)
         
-       
         loadItems()
     }
     

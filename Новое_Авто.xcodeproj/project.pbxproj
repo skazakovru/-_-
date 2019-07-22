@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8503F88722E316E20009B05E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8503F88622E316E20009B05E /* StoreKit.framework */; };
 		859E566F22DC75E500BF18F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859E566E22DC75E500BF18F9 /* AppDelegate.swift */; };
 		859E567422DC75E500BF18F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859E567222DC75E500BF18F9 /* Main.storyboard */; };
 		859E567722DC75E500BF18F9 /* __________.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 859E567522DC75E500BF18F9 /* __________.xcdatamodeld */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8503F88622E316E20009B05E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		859E566B22DC75E500BF18F9 /* Новое_Авто.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Новое_Авто.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		859E566E22DC75E500BF18F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859E567322DC75E500BF18F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8503F88722E316E20009B05E /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8503F88522E316E20009B05E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8503F88622E316E20009B05E /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		859E566222DC75E500BF18F9 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +116,7 @@
 				859E568522DC75E600BF18F9 /* Новое_АвтоTests */,
 				859E569022DC75E600BF18F9 /* Новое_АвтоUITests */,
 				859E566C22DC75E500BF18F9 /* Products */,
+				8503F88522E316E20009B05E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,6 +273,11 @@
 				TargetAttributes = {
 					859E566A22DC75E500BF18F9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					859E568122DC75E600BF18F9 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -515,11 +532,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6GKM2ZQ24G;
 				INFOPLIST_FILE = "Новое_Авто/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rigpet.----------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigpet.CheckNewCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -533,11 +551,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6GKM2ZQ24G;
 				INFOPLIST_FILE = "Новое_Авто/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rigpet.----------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigpet.CheckNewCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

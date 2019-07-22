@@ -39,7 +39,7 @@ class FirstTableViewController: UITableViewController {
         itemArray.append(newItem5)
         
         let newItem6 = Item()
-        newItem6.title = "// Примечания по возможностям приложения:"
+        newItem6.title = ""
         itemArray.append(newItem6)
         
         let newItem7 = Item()
@@ -58,6 +58,7 @@ class FirstTableViewController: UITableViewController {
         newItem10.title = "* Все изменения сохраняются автоматически и остаются в памяти устройства даже после перезагрузки."
         itemArray.append(newItem10)
         
+
         loadItems()
     }
 

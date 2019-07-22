@@ -37,7 +37,13 @@
                             <outlet property="delegate" destination="vCW-7H-Zxf" id="s6q-bF-EYV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="План проверки автомобиля" id="PRl-QM-ECU"/>
+                    <navigationItem key="navigationItem" title="План проверки автомобиля" id="PRl-QM-ECU">
+                        <barButtonItem key="rightBarButtonItem" title="Restore" id="yb4-aI-pqY">
+                            <connections>
+                                <action selector="restoreButton:" destination="vCW-7H-Zxf" id="Qmd-5W-73e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcc-O6-7cq" userLabel="First Responder" sceneMemberID="firstResponder"/>

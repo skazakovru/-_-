@@ -34,9 +34,8 @@ class SixthTableViewController: UITableViewController {
         newItem4.title = "Проверить давление в шинах и убедиться, что давление в шинах соответсвует рекоммендациям производителя"
         itemArray.append(newItem4)
         
-        
         let newItem6 = Item()
-        newItem6.title = "// Напоминание о возможностях приложения:"
+        newItem6.title = ""
         itemArray.append(newItem6)
         
         let newItem7 = Item()
@@ -55,7 +54,7 @@ class SixthTableViewController: UITableViewController {
         newItem10.title = "* Все изменения сохраняются автоматически и остаются в памяти устройства даже после перезагрузки."
         itemArray.append(newItem10)
         
-          
+       
         loadItems()
     }
     

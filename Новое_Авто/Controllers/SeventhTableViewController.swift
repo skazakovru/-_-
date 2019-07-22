@@ -41,7 +41,7 @@ class SeventhTableViewController: UITableViewController {
         newItem6.title = "О всех найденных дефектах сделать отметку в акте Приемки-Передачи"
         itemArray.append(newItem6)
     
-           
+    
         loadItems()
     }
     

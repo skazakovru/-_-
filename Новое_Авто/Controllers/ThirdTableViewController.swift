@@ -45,6 +45,7 @@ class ThirdTableViewController: UITableViewController {
         newItem7.title = "Компрессор (прилагается не во всех марках автомобилей)"
         itemArray.append(newItem7)
         
+     
         loadItems()
     }
     

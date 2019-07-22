@@ -35,7 +35,7 @@ class SecondTableViewController: UITableViewController {
         
         
         let newItem6 = Item()
-        newItem6.title = "// Напоминание о возможностях приложения:"
+        newItem6.title = ""
         itemArray.append(newItem6)
         
         let newItem7 = Item()

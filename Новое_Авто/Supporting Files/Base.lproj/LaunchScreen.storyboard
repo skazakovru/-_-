@@ -21,12 +21,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g12-Sh-0qg">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.050980392156862744" green="0.24705882352941178" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.050980392156862744" green="0.24705882352941178" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="lqc-bb-WFI">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <color key="backgroundColor" red="0.050980392156862744" green="0.24705882352941178" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Fle-MV-YYF"/>
+                                    <constraint firstAttribute="width" constant="240" id="k7I-yS-Exi"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="g12-Sh-0qg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AlG-yn-iFA"/>
                             <constraint firstItem="g12-Sh-0qg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GEA-Ep-WcA"/>
+                            <constraint firstItem="lqc-bb-WFI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IOQ-tv-dST"/>
+                            <constraint firstItem="lqc-bb-WFI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RwJ-UF-SDh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g12-Sh-0qg" secondAttribute="trailing" id="cNb-5v-jix"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g12-Sh-0qg" secondAttribute="bottom" id="rV5-Sc-F6V"/>
                         </constraints>
@@ -35,7 +46,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Checkmark" width="341" height="341"/>
+    </resources>
 </document>
