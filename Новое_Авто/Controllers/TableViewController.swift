@@ -6,7 +6,7 @@
 //  Copyright © 2019 Sergei Kazakov. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
 import StoreKit
 
@@ -55,15 +55,17 @@ class TableViewController: UITableViewController, SKPaymentTransactionObserver {
         } else {
             cell?.textLabel?.text = "Загрузить полную версию"
             cell?.textLabel?.textColor = #colorLiteral(red: 0.1176470588, green: 0.8901960784, blue: 0.8117647059, alpha: 1)
-            cell?.accessoryType = .disclosureIndicator
+            
         }
         
         
         return cell!
     }
     
+    //MARK: Table view delegate methods
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+ 
         if indexPath.row == itemArrayToShow.count {
             buyPremium()
         }
@@ -75,10 +77,11 @@ class TableViewController: UITableViewController, SKPaymentTransactionObserver {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         self.navigationController?.pushViewController(viewController!, animated: true)
+        
 
     }
     
-    // Mark: - In-App Purchase Methods
+    // Mark:  In-App Purchase Methods
     
     func buyPremium() {
         if SKPaymentQueue.canMakePayments() {
@@ -122,8 +125,6 @@ class TableViewController: UITableViewController, SKPaymentTransactionObserver {
                 
                 print("Transaction restored")
                 
-                navigationItem.setRightBarButton(nil, animated: true)
-                
                 SKPaymentQueue.default().finishTransaction(transaction)
             }
         }
@@ -132,6 +133,8 @@ class TableViewController: UITableViewController, SKPaymentTransactionObserver {
     func showPremiumContent() {
         
         UserDefaults.standard.set(true, forKey: productID)
+        
+        navigationItem.setRightBarButton(nil, animated: true)
         
         itemArrayToShow.append(contentsOf: itemArrayPremium)
         tableView.reloadData()
